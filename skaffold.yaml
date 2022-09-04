@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta27
+kind: Config
+metadata:
+  name: untitled
+build:
+  artifacts:
+  - image: pom-xml-image
+    buildpacks:
+      builder: gcr.io/buildpacks/builder:v1
+deploy:
+  kubectl:
+    manifests:
+    - deployment.yaml
