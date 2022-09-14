@@ -68,7 +68,7 @@ public class Main {
 
         int[][] matrix = new int[x][y];
         try {
-            Scanner myReader = new Scanner(new File("matrix2.txt"));
+            Scanner myReader = new Scanner(new File("res/matrix.txt"));
 
             int i = 0;
             while (myReader.hasNextLine())
@@ -93,7 +93,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        int x=5,y=5;
+        int x=80,y=80;
         int[][] matrix = loadMatrix(x,y);
 
         ArrayList<Integer> pathNumbers = new ArrayList<>();
